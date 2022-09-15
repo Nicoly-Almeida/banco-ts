@@ -1,7 +1,4 @@
 class Pessoa {
-    nome;
-    _idade;
-    _dataNascimento;
     constructor(nome, idade, dataNascimento) {
         this.nome = nome;
         this._idade = idade;
@@ -19,10 +16,10 @@ class Pessoa {
     set idade(idade) {
         this._idade = idade;
     }
-    get dataNascimento() {
+    getdataNascimento() {
         return this._dataNascimento;
     }
-    set dataNascimento(idade) {
-        this._dataNascimento = idade;
+    set dataNascimento(novaData) {
+        this._dataNascimento = novaData;
     }
 }

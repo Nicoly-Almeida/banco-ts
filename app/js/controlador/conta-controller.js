@@ -1,5 +1,4 @@
 class ContaController {
-    repositorioContas;
     constructor() {
         this.repositorioContas = new RepositorioContas();
     }

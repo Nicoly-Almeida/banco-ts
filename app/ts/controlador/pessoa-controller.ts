@@ -24,7 +24,7 @@ class PessoaController {
         const elementoDataNascimento = <HTMLInputElement>document.querySelector('#dataNascimento');
         const elementoCPF = <HTMLInputElement>document.querySelector('#cpf');
 
-        const pessoa = new PessoaFisica(elementoNome.value, Number(elementoIdade.value), elementoDataNascimento.value, elementoCPF.value);
+        const pessoa = new PessoaFisica(elementoNome.value, Number(elementoIdade.value), new Date (elementoDataNascimento.value), elementoCPF.value);
         this.repositorioPessoas.adicionar(pessoa);
         this.inserirPessoaNoHTML(pessoa);
     }
@@ -37,8 +37,8 @@ class PessoaController {
         const botaoApagar = document.createElement('button');
         botaoApagar.textContent = 'X';
 
-        botaoApagar.addEventListener('click', (event) => {this.repositorioPessoas.remover(pessoa.cpf); 
-            (<Element>event.target).parentElement.remove();});
+        /*botaoApagar.addEventListener('click', (event) => {this.repositorioPessoas.remover(pessoa.cpf); 
+            (<Element>event.target).parentElement.remove();});*/
 
         elementoP.appendChild(botaoApagar);
         document.body.appendChild(elementoP);

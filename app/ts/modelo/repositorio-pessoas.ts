@@ -13,7 +13,6 @@ class RepositorioPessoas {
     getPessoas() {
         return this.repositorio_pessoas;
     }     
-        
 }
 
     

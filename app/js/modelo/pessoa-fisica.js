@@ -1,7 +1,6 @@
 class PessoaFisica extends Pessoa {
-    cpf;
     constructor(nome, idade, dataNascimento, cpf) {
-        super(nome, idade, dataNascimento);
+        super(nome + " - Física", idade, dataNascimento);
         this.cpf = cpf;
         this.cpf = cpf;
     }

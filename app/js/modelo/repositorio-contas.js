@@ -1,5 +1,4 @@
 class RepositorioContas {
-    contas;
     constructor() {
         this.contas = new Array();
     }

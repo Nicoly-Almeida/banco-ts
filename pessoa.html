@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Bancário</title>
+</head>
+<body>
+    <h1>Cadastro de Cliente</h1>
+    <form>
+        <select name="tipoPessoa" id = "tipoPessoa">
+            <option value="pessoa-fisica" selected >Pessoa Física</option>
+            <option value="pessoa-juridica">Pessoa Jurídica</option>
+            
+        </select>
+        Nome: <input id="nome"> <br>
+        Idade: <input id="idade"> <br>
+        Data de Nascimento: <input type="date" id="dataNascimento">
+        <button onclick="contaController.inserir(event)">Inserir</button>
+    </form>
+
+    <script src="app/js/modelo/conta.js"></script>
+    <script src="app/js/modelo/conta-bonificada.js"></script>
+    <script src="app/js/modelo/repositorio-contas.js"></script>
+    <script src="app/js/controlador/conta-controller.js"></script>
+    <script src="app/js/script.js"></script>
+</body>
+</html>
